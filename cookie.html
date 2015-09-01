@@ -12,7 +12,9 @@ div{width:100px; height:100px; background:red;}
 <div id="div1">divshow</div>
 <script>
 
-/*function setCookie(name,value,time){
+/*
+//第一种方法
+function setCookie(name,value,time){
 	var date = new Date();
 	date.setDate(date.getDate()+time);
 	document.cookie = name+"="+value+";expires="+date;
@@ -42,6 +44,7 @@ if(getCookie('aaa')!="12312"){
 	odiv1.style.display = "none";
 }*/
 
+//第二种方法
 var CookieUtil = {
 	set:function(name,value,time){
 		var cookText = encodeURIComponent(name) +"="+ encodeURIComponent(value);
