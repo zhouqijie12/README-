@@ -42,7 +42,7 @@ if(getCookie('aaa')!="12312"){
 	setCookie('aaa','12312',10);
 }else{
 	odiv1.style.display = "none";
-}*/
+}
 
 //第二种方法
 var CookieUtil = {
@@ -78,6 +78,18 @@ if(CookieUtil.get('aaafa').length>0){
 }else{
 	odiv1.style.display = "block";
 	CookieUtil.set('aaafa','11111',20);
+}
+*/
+//第三种方法
+var odiv1=document.getElementById("div1");
+if(window.localStorage){
+	if(window.localStorage.getItem('local') == null){
+		odiv1.style.display = "block";
+		window.localStorage.setItem("local","aaaaa");
+	}else{
+		odiv1.style.display = "none";
+	}
+	
 }
 </script>
 </body>
