@@ -13,7 +13,7 @@ function startMove(obj, json, fn){
             var iSpeed =(json[attr] - iCur)/5;
             iSpeed = iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
 
-            if(attr !=json[attr]){
+            if(iCur !=json[attr]){
                 flag = false;
             }
            
@@ -25,6 +25,7 @@ function startMove(obj, json, fn){
                 obj.style[attr] = iCur+'px';
             }
         }
+		
          if(flag){
             clearInterval(obj.timer);
             fn && fn();
