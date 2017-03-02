@@ -1,4 +1,0 @@
-git 结合bc使用，git设置：
-$ git config --global diff.tool bc3
-$ git config --global difftool.bc3.path "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
-bc必须是安装版，否则git无法用命令启动bc
